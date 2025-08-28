@@ -1,0 +1,50 @@
+/*
+ * rgb.c
+ *
+ *  Created on: May 10, 2024
+ *      Author: Youssif Hossam
+ */
+
+#include "rgb.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+void RGB_init(void){
+
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)){}
+    GPIOPinTypeGPIOOutput(RED_PORT_BASE, RED_PIN);
+    GPIOPinTypeGPIOOutput(GREEN_PORT_BASE, GREEN_PIN);
+    GPIOPinTypeGPIOOutput(BLUE_PORT_BASE, BLUE_PIN);
+
+}
+
+void RGB_RedLedOn(void){
+    GPIOPinWrite(RED_PORT_BASE, RED_PIN, 0x01);
+
+
+}
+void RGB_BlueLedOn(void){
+    GPIOPinWrite(GREEN_PORT_BASE, GREEN_PIN, 0x01);
+
+
+}
+void RGB_GreenLedOn(void){
+    GPIOPinWrite(BLUE_PORT_BASE, BLUE_PIN, 0x01);
+
+}
+
+void RGB_RedLedOff(void){
+    GPIOPinWrite(RED_PORT_BASE, RED_PIN, 0x00);
+}
+void RGB_BlueLedOff(void){
+    GPIOPinWrite(GREEN_PORT_BASE, GREEN_PIN, 0x00);
+}
+void RGB_GreenLedOff(void){
+    GPIOPinWrite(BLUE_PORT_BASE, BLUE_PIN, 0x00);
+}
+

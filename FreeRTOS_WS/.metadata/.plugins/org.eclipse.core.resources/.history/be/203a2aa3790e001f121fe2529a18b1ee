@@ -1,0 +1,42 @@
+/*
+ * rgb.c
+ *
+ *  Created on: May 10, 2024
+ *      Author: Youssif Hossam
+ */
+
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+void RGB_init(void){
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)){}
+
+
+
+}
+
+void RGB_RedLedOn(void){
+
+}
+void RGB_BlueLedOn(void){
+
+}
+void RGB_GreenLedOn(void){
+
+}
+
+void RGB_RedLedOff(void){
+
+}
+void RGB_BlueLedOff(void){
+
+}
+void RGB_GreenLedOff(void){
+
+}
+

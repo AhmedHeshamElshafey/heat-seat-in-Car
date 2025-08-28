@@ -1,0 +1,19 @@
+/*
+ * rgb.h
+ *
+ *  Created on: May 10, 2024
+ *      Author: Youssif Hossam
+ */
+
+#ifndef HAL_RGB_LED_RGB_H_
+#define HAL_RGB_LED_RGB_H_
+
+#define RED                     1
+#define GREEN                   2
+#define BLUE                    3
+
+
+
+
+
+#endif /* HAL_RGB_LED_RGB_H_ */

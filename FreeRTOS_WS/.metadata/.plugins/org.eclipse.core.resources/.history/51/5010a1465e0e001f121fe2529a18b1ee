@@ -1,0 +1,22 @@
+/* Kernel includes. */
+
+#include <stdint.h> /* READ COMMENT ABOVE. */
+
+/* MCAL includes. */
+#include "uart0.h"
+#include "inc/hw_memmap.h"
+#include "driverlib/adc.h"
+#include "driverlib/gpio.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/sysctl.h"
+#include "MCAL/GPIO/gpio.h"
+
+uint32_t getADC0Value(){
+
+    uint32_t pui32ADC0Value[1];
+    ADCProcessorTrigger(ADC0_BASE, 3);
+    while(!ADCIntStatus(ADC0_BASE, 3, FALSE));  // Wait for conversion to be completed.
+    ADCIntClear(ADC0_BASE, 3);
+    ADCSequenceDataGet(ADC0_BASE, 3, pui32ADC0Value);
+    return pui32ADC0Value[0];
+}

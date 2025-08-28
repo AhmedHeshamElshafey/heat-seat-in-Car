@@ -1,0 +1,31 @@
+
+**** Build of configuration Debug for project RTOS_Project ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/Common" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/MCAL" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/MCAL/GPIO" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/MCAL/UART" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/MCAL/GPTM" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/FreeRTOS/Source/include" --include_path="D:/Studies/M.T Advanced Embedded Systems/RTOS/Project/FreeRTOS_WS/RTOS_Project/FreeRTOS/Source/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "RTOS_Project.out"
+Invoking: Arm Linker
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"RTOS_Project.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RTOS_Project_linkInfo.xml" --rom_model -o "RTOS_Project.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/Source/event_groups.obj" "./FreeRTOS/Source/list.obj" "./FreeRTOS/Source/queue.obj" "./FreeRTOS/Source/tasks.obj" "./FreeRTOS/Source/timers.obj" "./FreeRTOS/Source/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/Source/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/Source/portable/MemMang/heap_4.obj" "./HAL/POTS/pots.obj" "./HAL/RGB_LED/rgb.obj" "./MCAL/GPIO/gpio.obj" "./MCAL/GPTM/GPTM.obj" "./MCAL/UART/uart0.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+Finished building target: "RTOS_Project.out"
+ 
+Building secondary target: "RTOS_Project.hex"
+Invoking: Arm Hex Utility
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex" --diag_wrap=off -o "RTOS_Project.hex"  "RTOS_Project.out" 
+Translating to Extended Tektronix format...
+   "RTOS_Project.out" .intvecs ==> .intvecs
+   "RTOS_Project.out" .text ==> .text
+   "RTOS_Project.out" .const ==> .const
+   "RTOS_Project.out" .cinit ==> .cinit
+Finished building secondary target: "RTOS_Project.hex"
+ 
+warning: Data is being written to auto-generated file RTOS_Project.x1
+warning: Data is being written to auto-generated file RTOS_Project.x2
+warning: Data is being written to auto-generated file RTOS_Project.x3
+
+**** Build Finished ****

@@ -1,0 +1,18 @@
+/*
+ * rgb.c
+ *
+ *  Created on: May 10, 2024
+ *      Author: Youssif Hossam
+ */
+
+
+void GPIO_BuiltinButtonsLedsInit(void);
+
+void GPIO_RedLedOn(void);
+void GPIO_BlueLedOn(void);
+void GPIO_GreenLedOn(void);
+
+void GPIO_RedLedOff(void);
+void GPIO_BlueLedOff(void);
+void GPIO_GreenLedOff(void);
+

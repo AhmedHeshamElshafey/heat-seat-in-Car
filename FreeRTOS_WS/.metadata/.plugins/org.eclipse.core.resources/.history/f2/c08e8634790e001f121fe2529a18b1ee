@@ -1,0 +1,32 @@
+/*
+ * rgb.h
+ *
+ *  Created on: May 10, 2024
+ *      Author: Youssif Hossam
+ */
+
+#ifndef HAL_RGB_LED_RGB_H_
+#define HAL_RGB_LED_RGB_H_
+
+#define RED                     1
+#define GREEN                   2
+#define BLUE                    3
+
+#define RED_GPIO_PERIPH         SYSCTL_PERIPH_GPIOB
+#define RED_TIMER_PERIPH        SYSCTL_PERIPH_TIMER0
+#define BLUE_GPIO_PERIPH        SYSCTL_PERIPH_GPIOB
+#define BLUE_TIMER_PERIPH       SYSCTL_PERIPH_TIMER1
+#define GREEN_GPIO_PERIPH       SYSCTL_PERIPH_GPIOB
+#define GREEN_TIMER_PERIPH      SYSCTL_PERIPH_TIMER1
+
+#define RED_GPIO_BASE           GPIO_PORTF_BASE
+#define RED_TIMER_BASE          TIMER0_BASE
+#define BLUE_GPIO_BASE          GPIO_PORTF_BASE
+#define BLUE_TIMER_BASE         TIMER1_BASE
+#define GREEN_GPIO_BASE         GPIO_PORTF_BASE
+#define GREEN_TIMER_BASE        TIMER1_BASE
+
+
+
+
+#endif /* HAL_RGB_LED_RGB_H_ */
